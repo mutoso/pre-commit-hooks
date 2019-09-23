@@ -11,3 +11,9 @@
     language: system
     files: \.rs$
     pass_filenames: false
+-   id: commitlint
+    name: Lint commit message
+    description: Checks commit message
+    language: system
+    entry: commitlint --edit
+    verbose: true
