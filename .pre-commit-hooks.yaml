@@ -4,3 +4,10 @@
     entry: bash -c 'iconv -f utf-8 -t utf-16 $@ > /dev/null'
     language: system
     types: [text]
+-   id: cargo-fmt
+    name: Run cargo fmt
+    description: Formats rust code with nightly rustfmt
+    entry: cargo +nightly fmt
+    language: system
+    files: \.rs$
+    pass_filenames: false
