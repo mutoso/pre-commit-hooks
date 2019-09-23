@@ -1,0 +1,6 @@
+-   id: valid-utf8
+    name: Check for valid UTF-8
+    description: Checks if file is valid utf-8 via iconv
+    entry: bash -c 'iconv -f utf-8 -t utf-16 $@ > /dev/null'
+    language: system
+    types: [text]
